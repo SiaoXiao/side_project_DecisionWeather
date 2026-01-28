@@ -139,9 +139,9 @@ const loadWeather = async (loc: LocationInfo) => {
   loading.value = true;
   error.value = null;
   try {
-    const displayName = t(`cities.${loc.name}`) !== `cities.${loc.name}`
-      ? t(`cities.${loc.name}`)
-      : loc.name;
+    const displayName = loc.name === 'currentLocation'
+      ? t('currentLocation')
+      : (t(`cities.${loc.name}`) !== `cities.${loc.name}` ? t(`cities.${loc.name}`) : loc.name);
 
     const data = await fetchWeatherByCoords(loc.lat, loc.lon, displayName, controller.signal);
     if (!controller.signal.aborted) {
