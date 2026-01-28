@@ -24,6 +24,13 @@ const i18n = createI18n({
   locale: getInitialLocale(),
   fallbackLocale: 'zh-TW',
   flatJson: true,
+  messageResolver: (obj, path) => {
+    if (!obj || typeof obj !== 'object') return null;
+    if (Object.prototype.hasOwnProperty.call(obj, path)) {
+      return (obj as Record<string, unknown>)[path];
+    }
+    return path.split('.').reduce((acc: any, key) => (acc ? acc[key] : null), obj as any);
+  },
   messages: {},
 });
 

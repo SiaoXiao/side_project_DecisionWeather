@@ -12,7 +12,7 @@
           {{ t('decisionTitle') }}
         </span>
         <h2 class="text-3xl md:text-4xl font-black leading-tight">
-          {{ t(`advice.rain_critical.action`) }}
+          {{ t(`advice.${adviceKey.key}.action`) }}
         </h2>
         <p class="text-base md:text-lg font-bold opacity-90 max-w-md">
           {{ t(`advice.${adviceKey.key}.description`) }}
