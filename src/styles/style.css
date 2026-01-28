@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+
+@theme {
+    --color-brand-50: #eff6ff;
+    --color-brand-100: #dbeafe;
+    --color-brand-400: #60a5fa;
+    --color-brand-500: #3b82f6;
+    --color-brand-600: #2563eb;
+    --color-brand-900: #1e3a8a;
+}
+
+@layer base {
+  :is(.dark) {
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: rgb(241, 245, 250);
+    color: rgb(15, 23, 42);
+    transition-property: background-color, color;
+    transition-duration: 300ms;
+  }
+
+  :is(.dark) body {
+    background-color: rgb(3, 7, 18);
+    color: rgb(243, 244, 246);
+  }
+
+  #app {
+    background-color: rgb(241, 245, 250);
+    color: rgb(15, 23, 42);
+  }
+
+  :is(.dark) #app {
+    background-color: rgb(3, 7, 18);
+    color: rgb(243, 244, 246);
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .float-animation {
+    animation: float 3s ease-in-out infinite;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
