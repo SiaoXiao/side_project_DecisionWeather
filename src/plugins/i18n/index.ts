@@ -23,6 +23,7 @@ const i18n = createI18n({
   legacy: false,
   locale: getInitialLocale(),
   fallbackLocale: 'zh-TW',
+  flatJson: false,
   messages: {},
 });
 
