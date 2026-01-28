@@ -29,6 +29,21 @@ const i18n = createI18n({
 
 const loadedLocales = new Set<string>();
 
+const isPlainObject = (value: unknown): value is Record<string, unknown> =>
+  !!value && typeof value === 'object' && !Array.isArray(value);
+
+const flattenMessages = (input: Record<string, unknown>, prefix = '', output: Record<string, string> = {}) => {
+  for (const [key, value] of Object.entries(input)) {
+    const nextKey = prefix ? `${prefix}.${key}` : key;
+    if (isPlainObject(value)) {
+      flattenMessages(value, nextKey, output);
+    } else if (typeof value === 'string') {
+      output[nextKey] = value;
+    }
+  }
+  return output;
+};
+
 const loadLocaleFile = async (locale: string) => {
   const res = await fetch(`/lang/${locale}.json`);
   if (!res.ok) {
@@ -40,7 +55,10 @@ const loadLocaleFile = async (locale: string) => {
 export const loadLocale = async (locale: string) => {
   if (!supportedLocales.includes(locale)) return;
   if (loadedLocales.has(locale)) return;
-  const messages = await loadLocaleFile(locale);
+  const rawMessages = await loadLocaleFile(locale);
+  const messages = isPlainObject(rawMessages)
+    ? flattenMessages(rawMessages as Record<string, unknown>)
+    : {};
   i18n.global.setLocaleMessage(locale, messages);
   loadedLocales.add(locale);
 };
