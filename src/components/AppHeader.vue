@@ -32,14 +32,15 @@ import { provide } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { Sun } from 'lucide-vue-next';
 import type { Language } from '../types';
+import { setI18nLocale } from '../plugins/i18n';
 
 const { locale, t } = useI18n();
 
 const languages: Language[] = ['zh-TW', 'en-US'];
 
-const setLang = (newLang: Language) => {
+const setLang = async (newLang: Language) => {
+  await setI18nLocale(newLang);
   locale.value = newLang;
-  localStorage.setItem('dw_lang', newLang);
 };
 
 // Provide to child components

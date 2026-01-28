@@ -1,0 +1,58 @@
+{
+  "appName": "DecisionWeather",
+  "searchPlaceholder": "Search city...",
+  "currentLocation": "My Location",
+  "detecting": "Detecting...",
+  "noResults": "No results found",
+  "decisionTitle": "ACTION ADVICE",
+  "nowTemp": "Now",
+  "feelsLike": "Feels like",
+  "status": "Status",
+  "precipProb": "Precip",
+  "humidity": "Humidity",
+  "uvIndex": "UV Index",
+  "future6Hours": "Next 6 Hours Forecast",
+  "refresh": "Refresh Weather Info",
+  "footerSource": "Powered by Open-Meteo API",
+  "error": "Connection failed or location denied",
+  "errorHint": "Network or service temporarily unavailable.",
+  "retry": "Retry",
+  "searching": "Searching...",
+  "cities": {
+    "Taipei": "Taipei",
+    "Taichung": "Taichung",
+    "Kaohsiung": "Kaohsiung"
+  },
+  "weatherStatus": {
+    "sunny": "Sunny",
+    "cloudy": "Cloudy",
+    "rainy": "Rainy",
+    "storm": "Storm"
+  },
+  "advice": {
+    "rain_critical": {
+      "action": "Take an umbrella",
+      "description": "It is currently raining or very likely to rain soon. Stay dry!"
+    },
+    "rain_upcoming": {
+      "action": "Rain expected soon",
+      "description": "Rain is likely within the next hour. Better bring an umbrella."
+    },
+    "heat_warning": {
+      "action": "Extreme heat warning",
+      "description": "High temperature and UV levels. Stay hydrated and seek shade."
+    },
+    "cold_warning": {
+      "action": "Bundle up warmly",
+      "description": "It feels quite chilly out there. Wear a coat or thermal layers."
+    },
+    "warm_notice": {
+      "action": "Warm weather",
+      "description": "Light clothing recommended. Don't forget to stay hydrated."
+    },
+    "comfortable": {
+      "action": "Perfect for outdoors",
+      "description": "The weather is stable and pleasant. Enjoy your day out!"
+    }
+  }
+}
