@@ -18,41 +18,23 @@
   "errorHint": "可能是網路或服務暫時無回應",
   "retry": "點擊重試",
   "searching": "搜尋中...",
-  "cities": {
-    "Taipei": "台北市",
-    "Taichung": "台中市",
-    "Kaohsiung": "高雄市"
-  },
-  "weatherStatus": {
-    "sunny": "晴天",
-    "cloudy": "多雲",
-    "rainy": "雨天",
-    "storm": "暴雨"
-  },
-  "advice": {
-    "rain_critical": {
-      "action": "出門務必帶傘",
-      "description": "目前正在降雨或降雨機率極高，建議攜帶雨具並注意道路濕滑。"
-    },
-    "rain_upcoming": {
-      "action": "一小時內可能降雨",
-      "description": "短時間內降雨機率升高，出門建議帶傘以防萬一。"
-    },
-    "heat_warning": {
-      "action": "嚴防曬、多補水",
-      "description": "氣溫偏高且紫外線強烈，請避免長時間戶外曝曬。"
-    },
-    "cold_warning": {
-      "action": "注意防寒保暖",
-      "description": "目前體感溫度較低，建議穿著大衣或發熱衣。"
-    },
-    "warm_notice": {
-      "action": "天氣偏熱",
-      "description": "適合輕便穿著，別忘了隨手拿一瓶水。"
-    },
-    "comfortable": {
-      "action": "天氣舒適，適合外出",
-      "description": "今天氣溫穩定，是非常適合戶外活動的好天氣。"
-    }
-  }
+  "cities.Taipei": "台北市",
+  "cities.Taichung": "台中市",
+  "cities.Kaohsiung": "高雄市",
+  "weatherStatus.sunny": "晴天",
+  "weatherStatus.cloudy": "多雲",
+  "weatherStatus.rainy": "雨天",
+  "weatherStatus.storm": "暴雨",
+  "advice.rain_critical.action": "出門務必帶傘",
+  "advice.rain_critical.description": "目前正在降雨或降雨機率極高，建議攜帶雨具並注意道路濕滑。",
+  "advice.rain_upcoming.action": "一小時內可能降雨",
+  "advice.rain_upcoming.description": "短時間內降雨機率升高，出門建議帶傘以防萬一。",
+  "advice.heat_warning.action": "嚴防曬、多補水",
+  "advice.heat_warning.description": "氣溫偏高且紫外線強烈，請避免長時間戶外曝曬。",
+  "advice.cold_warning.action": "注意防寒保暖",
+  "advice.cold_warning.description": "目前體感溫度較低，建議穿著大衣或發熱衣。",
+  "advice.warm_notice.action": "天氣偏熱",
+  "advice.warm_notice.description": "適合輕便穿著，別忘了隨手拿一瓶水。",
+  "advice.comfortable.action": "天氣舒適，適合外出",
+  "advice.comfortable.description": "今天氣溫穩定，是非常適合戶外活動的好天氣。"
 }
