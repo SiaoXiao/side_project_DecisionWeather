@@ -20,7 +20,7 @@
               : 'text-slate-400'
           ]"
         >
-          {{ l === 'zh-TW' ? '中' : 'EN' }}
+          {{ l === 'zh-TW' ? '繁' : 'EN' }}
         </button>
       </div>
     </div>

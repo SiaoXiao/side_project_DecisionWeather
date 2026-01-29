@@ -10,7 +10,7 @@
         :key="idx"
         class="flex flex-col items-center min-w-[80px] space-y-3 bg-slate-50 p-4 rounded-3xl border border-slate-100 transition-colors hover:bg-slate-100 group"
       >
-        <span class="text-xs font-black text-slate-400">{{ h.time }}</span>
+        <span class="text-xs font-black text-slate-400 text-center">{{ formatHour(h.time) }}</span>
         <div class="transition-transform group-hover:scale-110">
           <component :is="miniIcons[h.status]" class="w-6 h-6" :class="getWeatherIconClass(h.status)" />
         </div>
@@ -30,6 +30,7 @@ import { useI18n } from 'vue-i18n';
 import { ChevronRight, Umbrella } from 'lucide-vue-next';
 
 import type { HourlyForecast, WeatherStatus } from '../types';
+import { formatHour } from '../utils/timeFormat';
 
 defineProps({
   hourly: {

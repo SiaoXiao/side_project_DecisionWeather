@@ -18,23 +18,41 @@
   "errorHint": "Network or service temporarily unavailable.",
   "retry": "Retry",
   "searching": "Searching...",
-  "cities.Taipei": "Taipei",
-  "cities.Taichung": "Taichung",
-  "cities.Kaohsiung": "Kaohsiung",
-  "weatherStatus.sunny": "Sunny",
-  "weatherStatus.cloudy": "Cloudy",
-  "weatherStatus.rainy": "Rainy",
-  "weatherStatus.storm": "Storm",
-  "advice.rain_critical.action": "Take an umbrella",
-  "advice.rain_critical.description": "It is currently raining or very likely to rain soon. Stay dry!",
-  "advice.rain_upcoming.action": "Rain expected soon",
-  "advice.rain_upcoming.description": "Rain is likely within the next hour. Better bring an umbrella.",
-  "advice.heat_warning.action": "Extreme heat warning",
-  "advice.heat_warning.description": "High temperature and UV levels. Stay hydrated and seek shade.",
-  "advice.cold_warning.action": "Bundle up warmly",
-  "advice.cold_warning.description": "It feels quite chilly out there. Wear a coat or thermal layers.",
-  "advice.warm_notice.action": "Warm weather",
-  "advice.warm_notice.description": "Light clothing recommended. Don't forget to stay hydrated.",
-  "advice.comfortable.action": "Perfect for outdoors",
-  "advice.comfortable.description": "The weather is stable and pleasant. Enjoy your day out!"
+  "cities": {
+    "Taipei": "Taipei",
+    "Taichung": "Taichung",
+    "Kaohsiung": "Kaohsiung"
+  },
+  "weatherStatus": {
+    "sunny": "Sunny",
+    "cloudy": "Cloudy",
+    "rainy": "Rainy",
+    "storm": "Storm"
+  },
+  "advice": {
+    "rain_critical": {
+      "action": "Take an umbrella",
+      "description": "It is currently raining or very likely to rain soon. Stay dry!"
+    },
+    "rain_upcoming": {
+      "action": "Rain expected soon",
+      "description": "Rain is likely within the next hour. Better bring an umbrella."
+    },
+    "heat_warning": {
+      "action": "Extreme heat warning",
+      "description": "High temperature and UV levels. Stay hydrated and seek shade."
+    },
+    "cold_warning": {
+      "action": "Bundle up warmly",
+      "description": "It feels quite chilly out there. Wear a coat or thermal layers."
+    },
+    "warm_notice": {
+      "action": "Warm weather",
+      "description": "Light clothing recommended. Don't forget to stay hydrated."
+    },
+    "comfortable": {
+      "action": "Perfect for outdoors",
+      "description": "The weather is stable and pleasant. Enjoy your day out!"
+    }
+  }
 }
