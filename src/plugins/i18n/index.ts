@@ -17,6 +17,7 @@ const i18n = createI18n({
   globalInjection: true,
   locale: getStorageLangCode(),
   fallbackLocale: 'en-US',
+  flatJson: true,
   messages: {
     'zh-TW': {},
     'en-US': {},
